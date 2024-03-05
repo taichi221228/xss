@@ -8,6 +8,10 @@
     <title>XSS</title>
 </head>
 <body>
-<h1>Hello World!</h1>
+    <h1>XSS</h1>
+    <form action="/submit" method="post">
+        <label><input type="text" name="name" value="<script>alert('XSS');</script>"></label>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
