@@ -1,6 +1,5 @@
 import { Hono } from "hono";
 import type { FC } from "hono/jsx";
-import fs from "fs";
 
 const app = new Hono();
 
